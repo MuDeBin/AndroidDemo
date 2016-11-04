@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+              android:background="@color/bg"
+    tools:context="com.example.picturebrowser.MainActivity">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <Button
+            android:id="@+id/plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="增大透明度"
+            tools:ignore="ButtonStyle"/>
+        <Button
+            android:id="@+id/minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="减小透明度"
+            tools:ignore="ButtonStyle"/>
+        <Button
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下一张"
+            tools:ignore="ButtonStyle,HardcodedText"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/ajax"
+        android:scaleType="fitCenter"
+        android:layout_gravity="center"/>
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:background="#d5c979"
+        android:layout_gravity="center"/>
+</LinearLayout>
